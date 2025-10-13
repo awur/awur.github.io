@@ -1,330 +1,153 @@
 <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&amp;display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
- 
- <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
 
 <!-- Your other head content -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/brands.min.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
- <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cute+Font&amp;family=Oxanium&amp;display=swap" rel="stylesheet" />
-
-<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
 <style>
 	@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900");
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
-
-$profileBg:#fff;
-$skillsBg:#3d3e42;
-$profileColor:#9099a0;
-$skillsColor:#9099a0; 
-$linkColor:#66cc99;
-$boldColor:#4a4e51;
-$time:0.6s;
-
- 
-@mixin breakpoint($point) {
-  @if $point == papa-bear {
-    @media (max-width: 1500px)  { @content; }
-  }
-  @if $point == mama-bear {
-    @media (max-width: 1200px)  { @content; }
-  }
-  @if $point == brother-bear {
-    @media (max-width: 850px)  { @content; }
-  }
-  @else if $point == baby-bear {
-    @media (max-width: 450px)  { @content; }
-  }
-}
-
-*, *::after, *::before {
-  box-sizing:border-box;
-}
-
-html,body {
-  height: 100%;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size:16px;
-  line-height:1.5em;
-}
-a{color:$linkColor; text-decoration:none;}
-.clearfix::after, .clearfix::before {
-  content: " ";
-	display: table;
-}
-.clearfix::after{clear:both;}
-.bold {color:$boldColor; font-weight:400;}
 
-.resume-wrapper {
-  position:relative;
-  text-align:center;
-  height:100%;
-}
-
-.container {
-  min-height:600px;
-} 
-
-.profile {
-  background:$profileBg;
-  width:40%;
-  float:left;
-  color:$profileColor;
-  @include breakpoint(brother-bear) { width: 100%; }
-  .name-wrapper {
-    float:left;
-    width:60%;
-  }
-  h1 {
-    font-size:2.5em;
-    text-align:left;
-    font-family: 'Varela Round', sans-serif;
-    color:$boldColor;
-    text-transform:uppercase;
-    line-height:1em;
-    padding-top:40px; 
-    @include breakpoint(mama-bear) {
-       padding-top:20px;
-    }
-    @include breakpoint(baby-bear) {
-      font-size:1.8em;  
-      padding-top:20px;
-    } 
-  }
-  li {
-      margin-bottom:10px;
-    }
-  .picture-resume-wrapper {
-    width:40%;
-    display:block;
-    float:left;
-    @include breakpoint(mama-bear) {
-       width:100%;
-    }
-  }
-  .picture-resume {
-    width:220px;
-    height:220px;
-    background-size:cover;
-    border-radius:50%;
-    margin-right:0px;
-    display:table;
-    position:relative;
-    vertical-align:middle;
-    span {
-        display:table-cell;
-        vertical-align: middle;
-        position:relative;
-        margin:0 auto;
-        z-index:10;
-       text-align:center
-    }
-    img {
-      border-radius:50%;
-      width:130px;
-      @include breakpoint(papa-bear) {
-        width:80px;
-      }
-      @include breakpoint(mama-bear) {
-        width:120px;
-        height:120px;
-      }
-    }
-    @include breakpoint(papa-bear) {
-      width:150px;
-      height:150px;
-    }
-    @include breakpoint(mama-bear) {
-      width:200px;
-      height:200px;
-    }
-     @include breakpoint(baby-bear) { width:180px;height:180px; } 
-  }
-  .contact-info{
-    margin-top:100px;
-    font-weight:300;
-    @include breakpoint(mama-bear) {margin-top:70px; } 
-    @include breakpoint(baby-bear) { margin-top:50px; } 
-  }
-  .list-titles {
-    float:left;
-    text-align:left;
-    font-weight:600;
-    width:40%;
-    color:$boldColor;
-  }
-  .list-content{
-    float:left;
-    width:60%;
-    text-align:left;
-    font-weight:300;
-  }
-  .contact-presentation {
-    text-align:left;
-    font-weight:300;
-    margin-top:100px;
-    margin-bottom:100px;
-    @include breakpoint(mama-bear) {margin-top:70px;margin-bottom:70px; } 
-    @include breakpoint(brother-bear) {margin-top:50px;margin-bottom:50px; } 
-    
-  }
-  svg {
-    width:100%;
-    position:absolute;
-    top:0;
-    left:0;
-    //display:none;
-  }
-
-  .st0, .st1 {
-    fill:#66cc99;
-  }
-
-}
-.experience {
-  background:$skillsBg;
-  width:60%;
-  float:left;
-  position:relative;
-  color:$skillsColor;
-  font-weight:300;
-  min-height:100%;
-  min-height:100vh;
-  @include breakpoint(brother-bear) { width: 100%; } 
-  h3.experience-title {
-    color:$linkColor;
-    text-align:left;
-    text-transform:uppercase;
-    font-size:1.2em;
-    margin-bottom:20px;
-    font-weight:400;
-  }
-  .company-wrapper {
-    width:30%;
-    float:left;
-    text-align:left;
-    padding-right:5%;
-    margin-bottom:60px;
-    @include breakpoint(baby-bear) {width:100%; margin-bottom:20px;} 
-  }
-  .job-wrapper {
-    width:70%;
-    float:left;
-    text-align:left;
-    padding-right:5%;
-    margin-bottom:60px;
-    @include breakpoint(baby-bear) {width:100%;margin-bottom:40px;} 
-  }
-  .experience-title {
-      color:white;
-      margin-bottom:15px;;
-    }
-}
-
-.section-padding {
- padding:60px 60px 40px 40px;
- @include breakpoint(brother-bear) { padding:80px 15% 40px 10%; }
- @include breakpoint(baby-bear) { padding:40px 10% 20px 5%; }
-}
-
-.section-wrapper {
-  width:50%;
-  float:left;
-  text-align:left;
-  color:$skillsColor;
-  font-weight:300;
-  margin-bottom:20px;
-  @include breakpoint(baby-bear) {width:100%;}
-  &:nth-child(3){ 
-    padding-right:8%;
-  }
-  h3.section-title {
-    color:$linkColor;
-    text-align:left;
-    text-transform:uppercase;
-    font-size:1.2em;
-    margin-bottom:20px;
-    font-weight:400;
-  }
-  .skill-percentage {
-    margin-bottom:10px;
-    position:relative;
-    &::after {
-      content:"";
-      width:100%;
-      height:6px;
-      background:$boldColor;
-      display:block;
-      margin-top:3px;
-    }
-    &::before{
-      content:"";
-      height:6px;
-      background:$linkColor;
-      position:absolute;
-      margin-top:3px;
-      bottom:0;
-    }
-    &:nth-child(1)::before {width:80%;animation: skill_1 $time ease;}
-    &:nth-child(2)::before {width:90%; animation: skill_2 $time ease;} 
-    &:nth-child(3)::before {width:50%;animation: skill_3 $time ease;}
-    &:nth-child(4)::before {width:60%;animation: skill_4 $time ease;}
-    &:nth-child(5)::before {width:70%;animation: skill_5 $time ease;}
-    &:nth-child(6)::before {width:70%;animation: skill_6 $time ease;}
-    &:nth-child(7)::before {width:70%;animation: skill_6 $time ease;}
-  }
+background-color: rgb(30 30 50);
+  height: 100vh;
   
+  font-family: Roboto, sans-serif;
+  color: white;
 }
 
-@keyframes skill_1 {from {width:0%;}to {width:80%;}}
-@keyframes skill_2 {from {width:0%;}to {width:90%;}}
-@keyframes skill_3 {from {width:0%;}to {width:50%;}}
-@keyframes skill_4 {from {width:0%;}to {width:60%;}}
-@keyframes skill_5 {from {width:0%;}to {width:70%;}}  
-@keyframes skill_6 {from {width:0%;}to {width:70%;}}
-@keyframes skill_7 {from {width:0%;}to {width:70%;}}
-h1 {text-align: center;}
-h6 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
+.playwrite-us-modern{
+  font-family: "Playwrite US Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 
-user agent stylesheet
-div {
-    display: block;
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1{background: -webkit-linear-gradient(0deg, #F6F6F2, #C49D29);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0; font-size: 21.5px; text-transform: uppercase;}
+h2 {
+  font-size: 3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+i {
+  margin: auto;
+  font-size: 4vmin;
+}
+
+.radial-container {
+  border-radius: 100%;
+  background-color: #AB8000;
+  width: clamp(25px, 10vmin, 75px);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: rotate 300ms ease;
+  z-index: 1;
+  transition-delay: 100ms;
+}
+
+.radial-container:is(:hover, :focus, :focus-within) {
+  rotate: 90deg;
+  outline: none;
+}
+
+.radial-item {
+  width: clamp(20px, 7vmin, 65px);
+  aspect-ratio: 1;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: flex;
+  transition: transform 350ms ease, opacity 250ms ease-out;
+  transition-delay: 100ms;
+}
+
+.radial-container:is(:hover, :focus) .radial-item, .radial-item:focus {
+  transform: translateX(150%);
+  opacity: 1;
+  outline: none;
+}
+
+.radial-item:nth-child(2) {
+  rotate: -90deg;
+  background-color: #2163df;
+}
+
+.radial-item:nth-child(3) {
+  rotate: -30deg;
+  background-color: #ff3636;
+}
+
+.radial-item:nth-child(4) {
+  rotate: 30deg;
+  background-color: #1a1a1a;
+}
+
+.radial-item:nth-child(5) {
+  rotate: 90deg;
+  background-color: #4fae5a;
+}
+
+.radial-item > i {
+  cursor: pointer;
+}
+
+.radial-item:nth-child(3) > i {
+  rotate: -60deg;
+}
+
+.radial-item:nth-child(4) > i {
+  rotate: -120deg;
+}
+
+.radial-item:nth-child(5) > i {
+  rotate: -180deg;
 }
 
 #cookie-consent-popup {
   position: ;
   bottom: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.8);
+  background-color: #1a1a2c;
   color: white;
   padding: 20px;
+text-align: center;
 }
 
 #cookie-consent-accept {
@@ -336,251 +159,42 @@ div {
   cursor: pointer;
   float: center;
   margin-top: 10px;
-}
-
-
-footer {text-align: center;}
-h6 {
-  color: grey;
-
-  background-color: white;
-
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: DM Sans;
-    
+text-align: center;
 }
 </style>
 
 
+ 
+        
+    
+<main>
+  <h1 class="quicksand"> Pave.Name <svg style='margin-bottom:-2px' fill="none" height="16" viewbox="0 0 16 16" width="16"><path clip-rule="evenodd" d="M8 0L9.99182 1.3121L12.3696 1.29622L13.3431 3.48797L15.3519 4.77336L14.9979 7.14888L16 9.32743L14.431 11.1325L14.1082 13.5126L11.8223 14.1741L10.277 16L8 15.308L5.72296 16L4.17772 14.1741L1.89183 13.5126L1.569 11.1325L0 9.32743L1.00206 7.14888L0.648112 4.77336L2.65693 3.48797L3.6304 1.29622L6.00818 1.3121L8 0Z" fill="#0095F6" fill-rule="evenodd"></path><path clip-rule="evenodd" d="M10.4036 5.20536L7.18853 8.61884L6.12875 7.49364C5.8814 7.23102 5.46798 7.21864 5.20536 7.466C4.94274 7.71335 4.93036 8.12677 5.17771 8.38939L6.71301 10.0195C6.9709 10.2933 7.40616 10.2933 7.66405 10.0195L11.3546 6.10111C11.6019 5.83848 11.5896 5.42507 11.3269 5.17771C11.0643 4.93036 10.6509 4.94274 10.4036 5.20536Z" fill="white" fill-rule="evenodd"></path></svg> 
+ 
+</h1>
+
+<div id="cookie-consent-popup" style="display:none">
+  <p style="color:#ffffff" class="playwrite-us-modern"> Pave Name typically refers to a personalized necklace, ring, bracelet, or other jewelry featuring a name or word, where the letters are encrusted with tiny diamonds or cubic zirconia stones. These pieces are often made from materials like sterling silver and gold, and are available in various fonts and styles, such as cursive or block letters. They are popular as personalized gifts.  </p>
+</div>
+
+
+  <h2>View Catalogue on Social Media </h2>
+
+  <div class="radial-container" tabindex="0">
+    <i class="fa-solid fa-arrow-trend-up"></i>
+    <div class="radial-item" tabindex="0" onclick="window.location.href='https://facebook.com';" ><i class="fa-brands fa-facebook"></i></div>
+    <div class="radial-item" tabindex="0" onclick="window.open('https://web.whatsapp.com', '_blank');"><i class="fa-brands fa-whatsapp"></i></div>
+    <div class="radial-item" tabindex="0"><i class="fa-brands fa-tiktok"></i></div>
+    <div class="radial-item" tabindex="0"><i class="fa-brands fa-instagram"></i></div>
+  </div>
+
 
     
-
+</main>
 
   
-       
-                   
 
-<body>
-  <div class="resume-wrapper">
-	<section class="profile section-padding">
-		<div class="container">
-			<div class="picture-resume-wrapper">
-        <div class="picture-resume">
-        <span><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="" /></span>
-        <svg version="1.1" viewBox="0 0 350 350">
-  
-  <defs>
-    <filter id="goo">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
-      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm" />
-    </filter>
-  </defs>
-  
-  
-<g filter="url(#goo)" >  
-  
-  <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130"/>
-  
-  <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="122.7"/>
+<script> 
 
-</g>  
-</svg>
-      </div>
-         <div class="clearfix"></div>
- </div>
-      <div class="name-wrapper">
-        <h1>John <br/>Anderson</h1><!-- YOUR NAME AND LAST NAME  -->
-      </div>
-      <div class="clearfix"></div>
-      <div class="contact-info clearfix">
-      	<ul class="list-titles">
-      		<li>Call</li>
-      		<li>Mail</li>
-      		<li>Web</li>
-      		<li>Home</li>
-      	</ul>
-        <ul class="list-content ">
-        	<li>+34 123 456 789</li> <!-- YOUR PHONE NUMBER  -->
-        	<li>j.anderson@gmail.com</li> <!-- YOUR EMAIL -->
-        	<li><a href="#">janderson.com</a></li> <!-- YOUR WEBSITE  -->
-        	<li>Los Angeles, CA</li> <!-- YOUR STATE AND COUNTRY  -->
-        </ul>
-      </div>
-      <div class="contact-presentation"> <!-- YOUR PRESENTATION RESUME  -->
-      	<p><span class="bold">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod congue nisi, nec consequat quam. In consectetur faucibus turpis eget laoreet. Sed nec imperdiet purus. </p>
-      </div>
-      <div class="contact-social clearfix">
-      	<ul class="list-titles">
-      		<li>Twitter</li>
-      		<li>Dribbble</li>
-      		<li>Codepen</li>
-      	</ul>
-        <ul class="list-content"> <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
-      		<li><a href="">@janderson</a></li> <!-- YOUR TWITTER USER  -->
-      		<li><a href="">janderson</a></li> <!-- YOUR DRIBBBLE USER  -->
-      		<li><a href="">janderson</a></li> <!-- YOUR BEHANCE USER  -->
-      	</ul>
-      </div>
-		</div>
-	</section>
-  
-  <section class="experience section-padding">
-  	<div class="container">
-  		<h3 class="experience-title">Experience</h3>
-      
-      <div class="experience-wrapper">
-      	<div class="company-wrapper clearfix">
-      		<div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-          <div class="time">Nov 2012 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-      	</div>
-        
-        <div class="job-wrapper clearfix">
-        	<div class="experience-title">Front End Developer </div> <!-- JOB TITLE  -->
-          <div class="company-description">
-          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>  <!-- JOB DESCRIPTION  -->
-          </div>
-        </div>
-        
-        <div class="company-wrapper clearfix">
-      		<div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-          <div class="time">Nov 2010 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-      	</div>
-        
-         <div class="job-wrapper clearfix">
-        	<div class="experience-title">Freelance, Web Designer / Web Developer</div> <!-- JOB TITLE  -->
-          <div class="company-description">
-          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>  <!-- JOB DESCRIPTION  -->
-          </div>
-        </div>
-        
-        <div class="company-wrapper clearfix">
-      		<div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-          <div class="time">Nov 2009 - Nov 2010</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-      	</div> 
-        
-         <div class="job-wrapper clearfix">
-        	<div class="experience-title">Web Designer </div> <!-- JOB TITLE  -->
-          <div class="company-description">
-          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>   <!-- JOB DESCRIPTION  -->
-          </div>
-        </div>
-        
-      </div><!--Skill experience-->
-      
-      <div class="section-wrapper clearfix">
-      	<h3 class="section-title">Skills</h3>  <!-- YOUR SET OF SKILLS  -->
-        	<ul>
-        		<li class="skill-percentage">HTML / HTML5</li>
-        		<li class="skill-percentage">CSS / CSS3 / SASS / LESS</li>
-        		<li class="skill-percentage">Javascript</li>
-        		<li class="skill-percentage">Jquery</li>
-        		<li class="skill-percentage">Wordpress</li>
-        		<li class="skill-percentage">Photoshop</li>
-            
-        	</ul>
-        
-      </div>
-      
-      <div class="section-wrapper clearfix">
-        <h3 class="section-title">Hobbies</h3>  <!-- DESCRIPTION OF YOUR HOBBIES -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p> 
-      </div>
-      
-  	</div>
-  </section>
-  
-  <div class="clearfix"></div>
-</div>
-  
-  
-</body>
-
-  <div class="footer" style="background-color: white; padding: 8px;">
-     <p style="color:#00242e">Copyright &copy; <span id="copyright-year"></span>, All Rights Reserved.</p>
-</div>
-
-
-      <div id="cookie-consent-popup" style="display:none">
-  <p style="color:#fea807">Our website uses Google Inc. cookies to personalise content or ads, to provide social media features, to analyse our traffic, and to improve your experience.</p>
-  <button id="cookie-consent-accept">Accept</button>
-</div>
-    
-
-
- <script>
-// Some code thanks to @chrisgannon
-
-var select = function(s) {
-  return document.querySelector(s);
-}
-
-function randomBetween(min,max)
-{
-    var number = Math.floor(Math.random()*(max-min+1)+min);
-  
-    if ( number !== 0 ){
-      return number;
-    }else {
-      return 0.5;
-    }
-}
-
-var tl = new TimelineMax();
-
-for(var i = 0; i < 20; i++){
-
-  var t = TweenMax.to(select('.bubble' + i), randomBetween(1, 1.5), {
-    x: randomBetween(12, 15) * (randomBetween(-1, 1)),
-    y: randomBetween(12, 15) * (randomBetween(-1, 1)), 
-    repeat:-1,
-    repeatDelay:randomBetween(0.2, 0.5),
-    yoyo:true,
-    ease:Elastic.easeOut.config(1, 0.5)
-  })
-
-  tl.add(t, (i+1)/0.6)
-}
-
-tl.seek(50);
-
-</script>    
-
- <script src="https://cdn.tailwindcss.com"></script>    
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          'blue': '#1da1f2',
-        },
-        fontFamily: {
-          sans: ['Inter', 'sans-serif'],
-        },
-      },
-    },
-    // Add other configurations like plugins here
-  }
-</script>
-
-<script>
-        document.getElementById("copyright-year").textContent = new Date().getFullYear();
-    </script>
-
-<script>
 document.addEventListener("DOMContentLoaded", function(){
   if(!localStorage.getItem('cookieConsent')){
     document.getElementById("cookie-consent-popup").style.display = "block";
@@ -590,21 +204,5 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("cookie-consent-popup").style.display = "none";
   });
 });
- </script>
-
-
-
-<script> 
-function gotoInstagram(){
-  window.open("mailto:email@example.com");
-};
-function gotoLinkedIn(){
-  window.open("tel:+123456789");
-};
-function gotoLinked(){
-  window.void(0)("");
-};
-function gotoGitHub(){
-   window.void(0)("");
-};
-</script></div></div>
+	
+</script>
